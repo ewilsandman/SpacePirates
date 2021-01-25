@@ -26,7 +26,7 @@ public class Projectile : MonoBehaviour
     {
         if(other.gameObject.GetComponent<Sheilds>())
             other.gameObject.GetComponent<Sheilds>().TakeSheildDamage(dameg);
-        else
+        else if(other.gameObject.GetComponent<EnemyHealth>())
         {
             other.gameObject.GetComponent<EnemyHealth>().TakeDamage(dameg);
         }

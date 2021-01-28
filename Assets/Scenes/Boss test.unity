@@ -439,6 +439,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: player_ship_unity
       objectReference: {fileID: 0}
+    - target: {fileID: 9035578699871959986, guid: 5056b0df5c01a9e478baaf934066ed54,
+        type: 3}
+      propertyPath: crosshairTexture
+      value: 
+      objectReference: {fileID: 2056362734}
+    - target: {fileID: 9035578699871959986, guid: 5056b0df5c01a9e478baaf934066ed54,
+        type: 3}
+      propertyPath: DisplaySpeed
+      value: 
+      objectReference: {fileID: 2056362733}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5056b0df5c01a9e478baaf934066ed54, type: 3}
 --- !u!114 &841438620 stripped
@@ -706,6 +716,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 232cf50bdd17ad341a95d7ea9fe3f92d, type: 3}
+--- !u!114 &2056362733 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1012859580872018911, guid: 232cf50bdd17ad341a95d7ea9fe3f92d,
+    type: 3}
+  m_PrefabInstance: {fileID: 2056362732}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!224 &2056362734 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6590778615026205337, guid: 232cf50bdd17ad341a95d7ea9fe3f92d,
+    type: 3}
+  m_PrefabInstance: {fileID: 2056362732}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2137581420 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1012859582269786535, guid: 232cf50bdd17ad341a95d7ea9fe3f92d,

@@ -121,6 +121,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &28011671 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5204714798854432106, guid: 7b0d20b886132e440ad63aafb04dec43,
+    type: 3}
+  m_PrefabInstance: {fileID: 4970766009525824057}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &138834472
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -481,12 +487,12 @@ PrefabInstance:
     - target: {fileID: 1192004524672331787, guid: 5056b0df5c01a9e478baaf934066ed54,
         type: 3}
       propertyPath: m_Parameters.numCornerVertices
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1192004524672331787, guid: 5056b0df5c01a9e478baaf934066ed54,
         type: 3}
       propertyPath: m_Parameters.numCapVertices
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1192004524672331787, guid: 5056b0df5c01a9e478baaf934066ed54,
         type: 3}
@@ -502,6 +508,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Parameters.colorGradient.key1.b
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1192004524672331787, guid: 5056b0df5c01a9e478baaf934066ed54,
+        type: 3}
+      propertyPath: m_Parameters.alignment
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1192004524672331787, guid: 5056b0df5c01a9e478baaf934066ed54,
+        type: 3}
+      propertyPath: m_MotionVectors
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3735489005348118994, guid: 5056b0df5c01a9e478baaf934066ed54,
         type: 3}
@@ -563,6 +579,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: player_ship_unity
       objectReference: {fileID: 0}
+    - target: {fileID: 5380571266127363934, guid: 5056b0df5c01a9e478baaf934066ed54,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 28011671}
     - target: {fileID: 9035578699871959986, guid: 5056b0df5c01a9e478baaf934066ed54,
         type: 3}
       propertyPath: DisplaySpeed
@@ -1452,6 +1473,11 @@ PrefabInstance:
         type: 3}
       propertyPath: ActiveDistance
       value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 2981254238817778229, guid: ff08c4f3f9283244e8c95a9c5b052300,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5313171378014547776, guid: ff08c4f3f9283244e8c95a9c5b052300,
         type: 3}

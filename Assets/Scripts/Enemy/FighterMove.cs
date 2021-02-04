@@ -14,7 +14,7 @@ public class FighterMove : MonoBehaviour
     public Rigidbody Self;
     public Transform Target;
     public Rigidbody Avoid;
-
+    float orbitTime = 10.0f;
     void Start()
     {
         Self = GetComponent<Rigidbody>();
@@ -55,6 +55,13 @@ public class FighterMove : MonoBehaviour
         else if (Close == true)
         {
             transform.RotateAround(Target.transform.position, Vector3.up, 20 * Time.deltaTime);
+            orbitTime -= Time.deltaTime;
+
+        }
+        if(orbitTime <= 0)
+        {
+            Stop = false;
+            transform.RotateAround(Target.transform.position, Vector3.down, 20 * Time.deltaTime);
         }
     }
 }

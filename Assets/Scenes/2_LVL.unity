@@ -5333,6 +5333,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: player_ship_unity
       objectReference: {fileID: 0}
+    - target: {fileID: 5204735240010485499, guid: 5056b0df5c01a9e478baaf934066ed54,
+        type: 3}
+      propertyPath: Damage
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5380571266127363934, guid: 5056b0df5c01a9e478baaf934066ed54,
         type: 3}
       propertyPath: target
@@ -6251,12 +6256,17 @@ PrefabInstance:
     - target: {fileID: 5313171378014547776, guid: ff08c4f3f9283244e8c95a9c5b052300,
         type: 3}
       propertyPath: CircleDistance
-      value: 75
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 5313171378014547776, guid: ff08c4f3f9283244e8c95a9c5b052300,
         type: 3}
       propertyPath: VerticalSpeed
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 5365546762569419508, guid: ff08c4f3f9283244e8c95a9c5b052300,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1616153987}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff08c4f3f9283244e8c95a9c5b052300, type: 3}

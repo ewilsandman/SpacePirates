@@ -12,7 +12,7 @@ public class LevelManeger : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
-        if( "victory" == SceneManager.GetActiveScene().name)
+        if("victory" == SceneManager.GetActiveScene().name)
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;

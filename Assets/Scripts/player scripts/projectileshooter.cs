@@ -28,7 +28,7 @@ public class projectileshooter : MonoBehaviour
                 GameObject projectile = Instantiate(prefab);
                 projectile.transform.position = transform.position + Camera.main.transform.forward * 2;
                 Rigidbody rb = projectile.GetComponent<Rigidbody>();
-                rb.velocity = Camera.main.transform.forward * 10;
+                rb.velocity = Camera.main.transform.forward * 40;
                 timeLeft = timeHolder;
                 pewNoise.Play(0);
             }

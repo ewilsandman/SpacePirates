@@ -30,6 +30,6 @@ public class Projectile : MonoBehaviour
         {
             other.gameObject.GetComponent<EnemyHealth>().TakeDamage(dameg);
         }
-        Destroy(gameObject, 1);
+        Destroy(gameObject, 0.2f);
     }
 }

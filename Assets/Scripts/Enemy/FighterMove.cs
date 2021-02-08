@@ -5,16 +5,17 @@ using UnityEngine.SceneManagement;
 public class FighterMove : MonoBehaviour
 {
     public bool Stop = false;
-    public bool Close = false;
     public float VerticalSpeed;
     public float RotationSpeed;
     public float Speed;
-    public float CircleDistance;
+    public float Maxdistance;
+    public float Mindistance;
     public float ActiveDistance;
     public Rigidbody Self;
     public Transform Target;
     public Rigidbody Avoid;
     float orbitTime = 10.0f;
+    float stopCheckTime = 0.0f;
     void Start()
     {
         Self = GetComponent<Rigidbody>();
@@ -23,45 +24,42 @@ public class FighterMove : MonoBehaviour
     void Update()
     {
         transform.LookAt(Target);
-        // Avoid = FindObjectOfType.GetComponent<Rigidbody>;
-        if (Vector3.Distance(transform.position, Target.position) < ActiveDistance && Close == false)
+        if (Vector3.Distance(transform.position, Target.position) < ActiveDistance)
         {
             Self.AddRelativeForce(0, 0, VerticalSpeed);
         }
-        
-        if (Vector3.Distance(transform.position, Target.position) < CircleDistance)
+        if (Vector3.Distance(transform.position, Target.position) < Maxdistance)
         {
-
-            Close = true;
             Circle();
         }
-            //if (Vector3.Distance(transform.position , ))
-            {
-            //Dodge();
-        }
-        Circle();
     }
-    void Dodge()
-    {
 
-    }
     void Circle()
     {
-        if (Stop == false && Close == true)
+        if (Vector3.Distance(transform.position, Target.position) < Mindistance)
         {
-            Self.velocity = Vector2.zero; Self.angularVelocity = Vector3.zero;
-            Stop = true;
+            Self.AddRelativeForce(0, 0, -VerticalSpeed);
         }
-        else if (Close == true)
+        if (Vector3.Distance(transform.position, Target.position) > Mindistance && Vector3.Distance(transform.position, Target.position) < Maxdistance && stopCheckTime <= 0)
+        {
+            Self.velocity = Vector2.zero;
+            Self.angularVelocity = Vector3.zero;
+            stopCheckTime = 10.0f;
+        }
+        else if (orbitTime >= 0)
         {
             transform.RotateAround(Target.transform.position, Vector3.up, 20 * Time.deltaTime);
             orbitTime -= Time.deltaTime;
-
         }
         if(orbitTime <= 0)
         {
-            Stop = false;
-            transform.RotateAround(Target.transform.position, Vector3.down, 20 * Time.deltaTime);
+            transform.RotateAround(Target.transform.position, -Vector3.up, 20 * Time.deltaTime);
+            orbitTime -= Time.deltaTime;
         }
+        if(orbitTime <= -10)
+        {
+            orbitTime = 10f;
+        }
+        stopCheckTime -= Time.deltaTime;
     }
 }

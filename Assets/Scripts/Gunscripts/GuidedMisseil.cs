@@ -19,6 +19,9 @@ public class GuidedMisseil : MonoBehaviour
     [SerializeField]
     private Transform target;
 
+    [SerializeField]
+    private float trackingDelay = 3f;
+
     private bool missileActive = false;
 
     private bool isAccelareting = false;
@@ -86,5 +89,10 @@ public class GuidedMisseil : MonoBehaviour
         }
 
         Debug.Log("Guiding");
+    }
+
+    IEnumerator TargetTrackingDelay()
+    {
+        yield return new WaitForSeconds(Random.Range(trackingDelay, ))
     }
 }

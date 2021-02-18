@@ -4,20 +4,19 @@ using UnityEngine;
 
 public class GuidedMisseil : MonoBehaviour
 {
-    [SerializeField]
-    private float acceleration = 20f;
+    public Transform target;
 
     [SerializeField]
-    private float accelerationTime = 7f;
+    private float acceleration = 2f;
 
     [SerializeField]
-    private float missileSpeed = 20f;
+    private float accelerationTime = 2f;
 
     [SerializeField]
-    private float turnRate = 50f;
+    private float missileSpeed = 2f;
 
     [SerializeField]
-    private Transform target;
+    private float turnRate = 5f;
 
     [SerializeField]
     private float trackingDelay = 3f;
@@ -43,8 +42,8 @@ public class GuidedMisseil : MonoBehaviour
     private void ActivetMissile()
     {
         missileActive = true;
-        targetTracking = true;
         accelerationActiveTime = Time.time;
+        StartCoroutine(TargetTrackingDelay());
     }
 
     private void Update()
@@ -93,6 +92,8 @@ public class GuidedMisseil : MonoBehaviour
 
     IEnumerator TargetTrackingDelay()
     {
-        yield return new WaitForSeconds(Random.Range(trackingDelay, ))
+        yield return new WaitForSeconds(Random.Range(trackingDelay, trackingDelay + 3f));
+        targetTracking = true;
+        Debug.Log("targetaccuerd");
     }
 }

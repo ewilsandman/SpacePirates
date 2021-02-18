@@ -4,11 +4,23 @@ using UnityEngine;
 
 public class launcher : MonoBehaviour
 {
-    public float firerate;
+    [SerializeField]
+    private float firerate;
 
+    [SerializeField]
     private bool fire;
 
+    [SerializeField]
     private float nextlanch;
+
+    [SerializeField]
+    private GuidedMisseil missile;
+
+    [SerializeField]
+    private Transform target;
+
+    [SerializeField]
+    private Transform launchSpot;
 
     private void Update()
     {
@@ -23,6 +35,8 @@ public class launcher : MonoBehaviour
 
     private void FireMissile()
     {
+        GuidedMisseil newMisseil = Instantiate(missile, launchSpot.position, launchSpot.rotation);
+        newMisseil.target = target;
         Debug.Log("Fire");
     }
 }

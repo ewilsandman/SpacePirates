@@ -68,8 +68,6 @@ public class GuidedMisseil : MonoBehaviour
 
         if (targetTracking)
             transform.rotation = Quaternion.RotateTowards(transform.rotation, guideRotation, turnRate * Time.deltaTime);
-
-        Debug.Log("Missile speed" + missileSpeed);
     }
 
     private float Since(float since)

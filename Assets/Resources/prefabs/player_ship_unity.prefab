@@ -537,7 +537,7 @@ MonoBehaviour:
   fireRate: 2
   weaponRange: 400
   hitForce: 100
-  Damage: 1
+  Damage: 3
   timeLeft: 0
   mainCam: {fileID: 1756838677335608431}
   keepBeamTime: 1

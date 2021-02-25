@@ -24,7 +24,6 @@ public class EnemyHealth : MonoBehaviour
         if (currenthealth <= 0)
         {
             Destroy(gameObject);
-            SceneManager.LoadScene("victory");
         }
     }
 }

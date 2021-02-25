@@ -6,12 +6,12 @@ public class Projectile : MonoBehaviour
 {
     public int dameg;
 
+    float timeLeft = 20.0f;
     private void Start()
     {
         Rigidbody rb = GetComponent<Rigidbody>();
         transform.rotation = Quaternion.LookRotation(rb.velocity * -1);
     }
-    float timeLeft = 20.0f;
 
     void Update()
     {

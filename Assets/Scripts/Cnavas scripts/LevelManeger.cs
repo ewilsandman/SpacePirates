@@ -20,7 +20,7 @@ public class LevelManeger : MonoBehaviour
     }
     public void StartGame()
     {
-        SceneManager.LoadScene("2_LVL");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void ReStartGame()

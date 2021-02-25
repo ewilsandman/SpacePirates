@@ -9,29 +9,14 @@ public class Mission : MonoBehaviour
     public string instructions;
     public Text MissionDisplay;
     public float TimeLeft;
+    public bool TimeTrial;
     // Start is called before the first frame update
     void Start()
-    {
-        if ("3_LVL" == SceneManager.GetActiveScene().name)
-        {
-            TimeLeft = 10f;
-        }
-    }
-
+    {}
     // Update is called once per frame
     void Update()
     {
-        if("1_LVL" == SceneManager.GetActiveScene().name)
-        {
-            instructions = "Find the glowing item";
-             MissionDisplay.text = instructions.ToString();
-        }
-        else if ("2_LVL" == SceneManager.GetActiveScene().name)
-        {
-            instructions = "Kill the enemy on the other side";
-            MissionDisplay.text = instructions.ToString();
-        }
-        else if ("3_LVL" == SceneManager.GetActiveScene().name)
+        if(TimeTrial == true)
         {
             TimeLeft -= Time.deltaTime;
             if (TimeLeft <= 0)
@@ -39,6 +24,10 @@ public class Mission : MonoBehaviour
                 SceneManager.LoadScene("GameOverscean");
             }
             instructions = "Get out! " + TimeLeft.ToString();
+            MissionDisplay.text = instructions.ToString();
+        }
+        else
+        {
             MissionDisplay.text = instructions.ToString();
         }
     }

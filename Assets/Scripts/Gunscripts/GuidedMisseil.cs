@@ -31,11 +31,12 @@ public class GuidedMisseil : MonoBehaviour
 
     private bool targetTracking = false;
 
+    [SerializeField]
     private Rigidbody rb;
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        //rb = GetComponent<Rigidbody>();
         ActivetMissile();
     }
 

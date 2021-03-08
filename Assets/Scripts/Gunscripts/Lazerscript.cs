@@ -41,7 +41,7 @@ public class Lazerscript : MonoBehaviour
 
                 // Declare a raycast hit to store information about what our raycast has hit
                 RaycastHit hit;
-                Debug.Log(rayOrigin);
+                //Debug.Log(rayOrigin);
 
                 // Set the start position for our visual effect for our laser to the position of gunEnd
                 lazerLine.SetPosition(0, self.position);

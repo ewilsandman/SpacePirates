@@ -473,7 +473,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 349.3, y: 113.8}
+  m_AnchoredPosition: {x: 349.3, y: 83.4}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1012859582195733092
@@ -935,7 +935,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 0
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 4766325099407824322}
   m_FillRect: {fileID: 1933746420590808867}
   m_HandleRect: {fileID: 0}
   m_Direction: 0
@@ -1940,7 +1940,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 0
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 6713060821580957480}
   m_FillRect: {fileID: 2994713266470038070}
   m_HandleRect: {fileID: 0}
   m_Direction: 0

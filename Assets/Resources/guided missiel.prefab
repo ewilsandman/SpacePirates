@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6043238688075665282}
   - component: {fileID: 6043238688075665283}
+  - component: {fileID: 6915677236581763324}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: guided missiel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6043238688075665284}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1208.0367, y: 164.38216, z: 2879.8176}
+  m_LocalPosition: {x: -1208.0367, y: 162.2, z: 2879.8176}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3311440737315115872}
@@ -50,7 +51,21 @@ MonoBehaviour:
   missileSpeed: 5
   turnRate: 500
   trackingDelay: 0
+  dameg: 0
   rb: {fileID: 3061920751217856935}
+--- !u!65 &6915677236581763324
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6043238688075665284}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.716309, y: 3.7961578, z: 211.61206}
+  m_Center: {x: 31.68811, y: -29.807945, z: -10.959106}
 --- !u!1001 &6043238687893953598
 PrefabInstance:
   m_ObjectHideFlags: 0

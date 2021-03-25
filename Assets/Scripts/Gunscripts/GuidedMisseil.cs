@@ -21,6 +21,9 @@ public class GuidedMisseil : MonoBehaviour
     [SerializeField]
     private float trackingDelay = 3f;
 
+    [SerializeField]
+    private int dameg;
+
     private bool missileActive = false;
 
     private bool isAccelareting = false;
@@ -94,5 +97,16 @@ public class GuidedMisseil : MonoBehaviour
         yield return new WaitForSeconds(Random.Range(trackingDelay, trackingDelay + 3f));
         targetTracking = true;
         Debug.Log("targetaccuerd");
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.GetComponent<Sheilds>())
+            other.gameObject.GetComponent<Sheilds>().TakeSheildDamage(dameg);
+        else if (other.gameObject.GetComponent<EnemyHealth>())
+        {
+            other.gameObject.GetComponent<EnemyHealth>().TakeDamage(dameg);
+        }
+        Destroy(gameObject, 0.1f);
     }
 }

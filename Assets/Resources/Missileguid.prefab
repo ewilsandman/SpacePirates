@@ -115,3 +115,5 @@ MonoBehaviour:
   missileSpeed: 20
   turnRate: 50
   trackingDelay: 3
+  dameg: 5
+  rb: {fileID: 0}

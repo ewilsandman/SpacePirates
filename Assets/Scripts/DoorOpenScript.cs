@@ -15,6 +15,7 @@ public class DoorOpenScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         RaycastHit hit;
         var rayDirection = player.position - transform.position;
         if (Vector3.Distance(transform.position, player.position) < ActiveDistance)

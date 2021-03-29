@@ -55,11 +55,18 @@ public class Lazerscript : MonoBehaviour
                     // Get a reference to a health script attached to the collider we hit
                     EnemyHealth health = hit.collider.GetComponent<EnemyHealth>();
 
+                    DoorTarget DoorHealth = hit.collider.GetComponent<DoorTarget>();
+
                     // If there was a health script attached
                     if (health != null)
                     {
                         // Call the damage function of that script, passing in our gunDamage variable
                         health.TakeDamage(Damage);
+                    }
+
+                    if (DoorHealth != null)
+                    {
+                        DoorHealth.TakeDamage(Damage);
                     }
 
                     // Check if the object we hit has a rigidbody attached

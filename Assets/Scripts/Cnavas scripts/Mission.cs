@@ -23,7 +23,7 @@ public class Mission : MonoBehaviour
             {
                 SceneManager.LoadScene("GameOverscean");
             }
-            instructions = "Get out! " + TimeLeft.ToString();
+            instructions = "Get out! " + UnityEngine.Mathf.Round(TimeLeft);
             MissionDisplay.text = instructions.ToString();
         }
         else

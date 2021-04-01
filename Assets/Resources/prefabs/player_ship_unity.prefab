@@ -211,7 +211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   normalSpeed: 0
-  accelerationSpeed: 45
+  accelerationSpeed: 100
   cameraPosition: {fileID: 5783470296483244161}
   mainCamera: {fileID: 1756838677335608431}
   spaceshipRoot: {fileID: 2998718018671995640}
@@ -571,7 +571,7 @@ GameObject:
   - component: {fileID: 2998718018671995640}
   - component: {fileID: 2394867908779539354}
   - component: {fileID: 8007651114089780597}
-  - component: {fileID: 6148680909620092865}
+  - component: {fileID: 1520012061846493415}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -640,8 +640,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &6148680909620092865
-BoxCollider:
+--- !u!136 &1520012061846493415
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -650,6 +650,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.14508581, y: 0.091742046, z: 0.033605352}
-  m_Center: {x: 0.028869478, y: -7.0032324e-10, z: 0.00537053}
+  m_Radius: 0.0249514
+  m_Height: 0.16108213
+  m_Direction: 0
+  m_Center: {x: 0.033702575, y: 0.000628345, z: -0.0004065704}

@@ -1,5 +1,22 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!111 &8726886457287524253
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2895883440508990719}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: b6a068e121046814fa8cb26a2db9283f, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 3a2c1a1279e23d94d89bb7b10a8fd464, type: 2}
+  - {fileID: 7400000, guid: b6a068e121046814fa8cb26a2db9283f, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 1
+  m_CullingType: 0
 --- !u!1 &2895883440534047781
 GameObject:
   m_ObjectHideFlags: 0
@@ -48,6 +65,35 @@ Animation:
   m_PlayAutomatically: 0
   m_AnimatePhysics: 1
   m_CullingType: 0
+--- !u!64 &8726886456362363502
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5426834225340452020}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1451496372542888449, guid: 59cfcd997ed531848bd0b7c9c408ce97, type: 3}
+--- !u!114 &8726886456362363505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5426834225340452020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 479dcd15a61772f4e80030b8c5f5d35f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  anim: {fileID: 8726886457287524253}
+  ActiveDistance: 200
 --- !u!1 &5426834225365464174
 GameObject:
   m_ObjectHideFlags: 0
@@ -202,7 +248,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9121646886781171558}
   m_Layer: 0
-  m_Name: SImpledooranimation
+  m_Name: DoorWorks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -224,52 +270,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &8726886456362363502
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5426834225340452020}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1451496372542888449, guid: 59cfcd997ed531848bd0b7c9c408ce97, type: 3}
---- !u!114 &8726886456362363505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5426834225340452020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 479dcd15a61772f4e80030b8c5f5d35f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  anim: {fileID: 8726886457287524253}
-  ActiveDistance: 200
---- !u!111 &8726886457287524253
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2895883440508990719}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: b6a068e121046814fa8cb26a2db9283f, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 3a2c1a1279e23d94d89bb7b10a8fd464, type: 2}
-  - {fileID: 7400000, guid: b6a068e121046814fa8cb26a2db9283f, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 1
-  m_CullingType: 0
 --- !u!1001 &8726886456084162647
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -35,7 +35,7 @@ public class EnemyShoot : MonoBehaviour
                     timeBetweenShots = Time.deltaTime + timeBetweenShots;
                     if (timeBetweenShots > fireCooldown)
                     {
-                        //pewNoise.Play(0);
+                        pewNoise.Play(0);
                         GameObject projectile = Instantiate(prefab) as GameObject;
                         projectile.transform.position = transform.position + transform.forward * 2;
                         Rigidbody rbp = projectile.GetComponent<Rigidbody>();

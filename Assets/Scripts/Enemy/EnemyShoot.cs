@@ -39,7 +39,7 @@ public class EnemyShoot : MonoBehaviour
                         GameObject projectile = Instantiate(prefab) as GameObject;
                         projectile.transform.position = transform.position + transform.forward * 2;
                         Rigidbody rbp = projectile.GetComponent<Rigidbody>();
-                        rbp.velocity = transform.forward * 150;
+                        rbp.velocity = transform.forward * 200;
                         timeBetweenShots = 0;
                     }
                     Rigidbody rb = GetComponent<Rigidbody>();

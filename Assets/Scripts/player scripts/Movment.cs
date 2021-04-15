@@ -38,8 +38,6 @@ public class Movment : MonoBehaviour
 
     void FixedUpdate()
     {
-        int speedDisplay = (int)speed;
-        DisplaySpeed.text = speedDisplay.ToString();
         speed = r.velocity.magnitude;
         //Press Right Mouse Button to accelerate
         if (Input.GetMouseButton(1))

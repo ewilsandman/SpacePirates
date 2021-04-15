@@ -34193,12 +34193,12 @@ PrefabInstance:
     - target: {fileID: 6842239577502646292, guid: 1b0d0e78f80335a4581d1d2d1d30e741,
         type: 3}
       propertyPath: m_Intensity
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6842239577502646293, guid: 1b0d0e78f80335a4581d1d2d1d30e741,
         type: 3}
       propertyPath: m_Intensity
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b0d0e78f80335a4581d1d2d1d30e741, type: 3}

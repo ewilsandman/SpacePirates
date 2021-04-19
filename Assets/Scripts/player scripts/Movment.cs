@@ -52,6 +52,10 @@ public class Movment : MonoBehaviour
         {
             speed = Mathf.Lerp(speed, normalSpeed, Time.deltaTime * 10);
         }
+        if (Input.GetKey(KeyCode.S))
+        {
+            lookRotation = Quaternion.Euler(0, 0, 0);
+        }
 
         //Set moveDirection to the vertical axis (up and down keys) * speed
         Vector3 moveDirection = new Vector3(0, 0, speed);

@@ -44,6 +44,10 @@ public class Movment : MonoBehaviour
         {
             speed = Mathf.Lerp(speed, accelerationSpeed, Time.deltaTime * 3);
         }
+        else if (Input.GetMouseButton(2))
+        {
+            speed = Mathf.Lerp(speed, -accelerationSpeed, Time.deltaTime * 3);
+        }
         else
         {
             speed = Mathf.Lerp(speed, normalSpeed, Time.deltaTime * 10);

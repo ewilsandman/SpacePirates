@@ -10,6 +10,7 @@ public class Mission : MonoBehaviour
     public Text MissionDisplay;
     public float TimeLeft;
     public bool TimeTrial;
+    private string newinstruction;
     // Start is called before the first frame update
     void Start()
     {}
@@ -23,8 +24,8 @@ public class Mission : MonoBehaviour
             {
                 SceneManager.LoadScene("GameOverscean");
             }
-            instructions = "Get out! " + UnityEngine.Mathf.Round(TimeLeft);
-            MissionDisplay.text = instructions.ToString();
+            newinstruction = instructions + UnityEngine.Mathf.Round(TimeLeft);
+            MissionDisplay.text = newinstruction.ToString();
         }
         else
         {

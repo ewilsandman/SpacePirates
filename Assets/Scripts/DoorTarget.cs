@@ -22,7 +22,7 @@ public class DoorTarget : MonoBehaviour
 
     private void Update()
     {
-        if (currenthealth < maxhealth)
+        if (currenthealth < 0)
         {
             TopDoor.Play();
             BotDoor.Play();

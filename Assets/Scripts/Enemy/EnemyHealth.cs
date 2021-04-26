@@ -9,7 +9,6 @@ public class EnemyHealth : MonoBehaviour
     GameObject boom;
     public int maxhealth;
     public int currenthealth = 0;
-    public Transform player;
     AudioSource boomNoise;
 
     private void Start()
@@ -29,7 +28,7 @@ public class EnemyHealth : MonoBehaviour
         {
             GameObject borkd = Instantiate(fekd) as GameObject;
             borkd.transform.position = transform.position;
-            borkd.transform.LookAt(player);
+            borkd.transform.rotation = transform.rotation;
             GameObject pow = Instantiate(boom) as GameObject;
             pow.transform.position = transform.position;
             Destroy(gameObject);

@@ -11,6 +11,7 @@ public class EnemyShoot : MonoBehaviour
     public bool smallGun;
     AudioSource pewNoise;
     public float ActiveDistance;
+    public bool barrel;
 
     void Start()
     {
@@ -43,7 +44,17 @@ public class EnemyShoot : MonoBehaviour
                         timeBetweenShots = 0;
                     }
                     Rigidbody rb = GetComponent<Rigidbody>();
-                    transform.LookAt(player);
+                    if (barrel == false)
+                    {
+                        float distanceToPlane = Vector3.Dot(transform.up, player.position - transform.position);
+                        Vector3 pointOnPlane = player.position - (transform.up * distanceToPlane);
+
+                        transform.LookAt(pointOnPlane, transform.up);
+                    }
+                    else if (barrel == true)
+                    {
+                        transform.LookAt(player);
+                    }
                 }
                 else
                 {

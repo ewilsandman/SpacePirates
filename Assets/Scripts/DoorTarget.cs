@@ -24,8 +24,8 @@ public class DoorTarget : MonoBehaviour
     {
         if (currenthealth < 0)
         {
-            TopDoor.Play();
-            BotDoor.Play();
+           /* TopDoor.Play();
+            BotDoor.Play();*/
             Destroy(gameObject);
         }
     }

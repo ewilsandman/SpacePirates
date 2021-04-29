@@ -10,10 +10,14 @@ public class Sheilds : MonoBehaviour
     public float sheildtimer;
     private float currentsheildtimer;
 
+    public float boostTimer;
+    private float currentboosttimer;
+
     private void Start()
     {
         currentsheilds = maxsheilds;
         currentsheildtimer = sheildtimer;
+        currentboosttimer = boostTimer;
     }
 
     public void TakeSheildDamage(int damage)
@@ -38,5 +42,27 @@ public class Sheilds : MonoBehaviour
                 sheildtimer = currentsheildtimer;
             }
         }
+        else if (currentsheilds > maxsheilds)
+        {
+            sheildtimer -= Time.deltaTime;
+            if (sheildtimer < 0)
+            {
+                currentsheilds = currentsheilds/2;
+                sheildtimer = currentsheildtimer;
+            }
+        }
+        if (boostTimer < 0)
+        {
+            if (Input.GetKey(KeyCode.Space))
+            {
+                currentsheilds = 200;
+                boostTimer = currentboosttimer;
+            }
+        }
+        else
+        {
+            boostTimer -= Time.deltaTime;
+        }
     }
+
 }

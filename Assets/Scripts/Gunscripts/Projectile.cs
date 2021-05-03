@@ -28,6 +28,10 @@ public class Projectile : MonoBehaviour
         {
             other.gameObject.GetComponent<Sheilds>().TakeSheildDamage(dameg);
         }
+        else if (other.gameObject.GetComponent<DoorTarget>())
+        {
+            other.gameObject.GetComponent<DoorTarget>().TakeDamage(dameg);
+        }
         else if (other.gameObject.GetComponent<EnemyHealth>())
         {
             other.gameObject.GetComponent<EnemyHealth>().TakeDamage(dameg);

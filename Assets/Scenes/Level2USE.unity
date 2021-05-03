@@ -4490,6 +4490,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9035578699871959986, guid: 5056b0df5c01a9e478baaf934066ed54,
         type: 3}
+      propertyPath: DisplaySpeed
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9035578699871959986, guid: 5056b0df5c01a9e478baaf934066ed54,
+        type: 3}
       propertyPath: crosshairTexture
       value: 
       objectReference: {fileID: 0}

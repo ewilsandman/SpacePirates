@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class Boss_Gun : MonoBehaviour
 {
+    private LineRenderer lazerLine;
     public Transform Target;
-    public Rigidbody Self;
+    public Transform Self;
     public int Damage;
     public int Range;
     // Start is called before the first frame update
     void Start()
     {
-        
+        lazerLine = GetComponent<LineRenderer>();
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -25,35 +25,24 @@ public class Boss_Gun : MonoBehaviour
             {
                 if (Physics.Raycast(Self.position ,Self.transform.forward, out hit, Range))
                 {
+                    lazerLine.enabled = true;
+
+                    lazerLine.SetPosition(0, Self.position);
+
                     // Set the end position for our laser line 
-                    //lazerLine.SetPosition(1, hit.point);
+                    lazerLine.SetPosition(1, hit.point);
 
                     // Get a reference to a health script attached to the collider we hit
-                   /* Shields health = hit.collider.GetComponent<Sheilds>();
+                    // Sheilds health = hit.collider.GetComponent<Sheilds>();
 
-                    if (health != null)
+
+                    if (hit.collider.GetComponent<Sheilds>() != null)
                     {
-                        // Call the damage function of that script, passing in our gunDamage variable
-                        health.TakeDamage(Damage);
+                        hit.collider.GetComponent<Sheilds>().TakeSheildDamage(Damage);
                     }
-                   */
+
                 }
             }
         }
-
     }
-   /* private IEnumerator ShotEffect()
-    {
-        // Play the shooting sound effect
-        pewNoise.Play();
-
-        // Turn on our line renderer
-        lazerLine.enabled = true;
-
-        //Wait for 1 second
-        yield return new WaitForSeconds(1);
-
-        // Deactivate our line renderer after waiting
-        lazerLine.enabled = false;
-    }*/
 }

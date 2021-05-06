@@ -744,6 +744,7 @@ GameObject:
   m_Component:
   - component: {fileID: 543800649}
   - component: {fileID: 543800648}
+  - component: {fileID: 543800650}
   - component: {fileID: 543800647}
   m_Layer: 0
   m_Name: Main Camera
@@ -769,8 +770,8 @@ Camera:
   m_GameObject: {fileID: 543800646}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -817,6 +818,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!45 &543800650
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543800646}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: 01679c385b7dd134385e1319e6328b3e, type: 2}
 --- !u!1 &663348000
 GameObject:
   m_ObjectHideFlags: 0
@@ -1145,15 +1155,15 @@ RectTransform:
   m_GameObject: {fileID: 831094616}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9507, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1465780597}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.6, y: 114.3}
-  m_SizeDelta: {x: 79.2695, y: 37.37292}
+  m_AnchoredPosition: {x: 10.5, y: 131.63}
+  m_SizeDelta: {x: 207.25975, y: 72.029175}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &831094618
 MonoBehaviour:
@@ -1168,26 +1178,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0.12923098, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_Font: {fileID: 12800000, guid: 8a2b9e2a607dd2143b58c44bc32410b4, type: 3}
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 40
+    m_MaxSize: 50
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: info
+  m_Text: Info
 --- !u!222 &831094619
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1213,7 +1223,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &921759252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1406,8 +1416,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7.3, y: 3.1}
-  m_SizeDelta: {x: 379.34192, y: 161.21278}
+  m_AnchoredPosition: {x: 7.3, y: 0.12187}
+  m_SizeDelta: {x: 379.34192, y: 167.16905}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1128347061
 MonoBehaviour:
@@ -1422,14 +1432,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0.15248537, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 8a2b9e2a607dd2143b58c44bc32410b4, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
@@ -1441,14 +1451,18 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'forward - RMB
+  m_Text: 'Forward - RMB
 
-    rotation - A, D
+    Back - MMB
 
-    shoot - LMB
+    Rotate with A, D
 
-    switch weapons
-    with 1 or 2
+    Shoot - LMB
+
+    Switch
+    weapons with 1 or 2
+
+    Boost shields with spacebar
 
 '
 --- !u!222 &1128347062
@@ -2304,7 +2318,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1465780597
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2864,8 +2878,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.1558228, y: -107.53053}
-  m_SizeDelta: {x: 90.826416, y: 48.135696}
+  m_AnchoredPosition: {x: 10.77, y: -118}
+  m_SizeDelta: {x: 100.045395, y: 48.135696}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1719230131
 MonoBehaviour:
@@ -2945,14 +2959,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.019607844, g: 0.14509805, b: 0.9725491, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 8a2b9e2a607dd2143b58c44bc32410b4, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0

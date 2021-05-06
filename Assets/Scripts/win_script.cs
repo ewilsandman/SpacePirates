@@ -8,7 +8,8 @@ public class win_script : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (GameObject.FindGameObjectWithTag("Player"))
-            SceneManager.LoadScene("victory");
-        
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 }

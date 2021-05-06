@@ -7,6 +7,7 @@ public class LevelManeger : MonoBehaviour
 {
     void Start()
     {
+        Time.timeScale = 1;
         if ("GameOverscean" == SceneManager.GetActiveScene().name)
         {
             Cursor.lockState = CursorLockMode.None;
@@ -21,6 +22,11 @@ public class LevelManeger : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void ReStartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void ReStartGame()

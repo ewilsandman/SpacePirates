@@ -18,18 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Level3USE.unity
     guid: 686bf8dd4a9a9644ba24e2410a3064fb
   - enabled: 1
+    path: Assets/Scenes/4_LVL.unity
+    guid: 6dc872b085c471b42b12ac4a3dac0b7a
+  - enabled: 1
     path: Assets/Scenes/victory.unity
     guid: 4485d1515b5205149864be1961a8fa2c
-  - enabled: 1
-    path: Assets/Scenes/GameOverscean.unity
-    guid: a9352d02eed257d4394c1f1fbfa189fa
-  - enabled: 0
-    path: Assets/Scenes/TestLevel.unity
-    guid: 782e56878c1233946b0a265350f995ba
-  - enabled: 0
-    path: Assets/Scenes/2_LVL.unity
-    guid: e689207b47744b04a80cb19a0732c4ff
-  - enabled: 0
-    path: Assets/Scenes/Overmap.unity
-    guid: a69fb506a94553142bb59453ff3269b8
   m_configObjects: {}

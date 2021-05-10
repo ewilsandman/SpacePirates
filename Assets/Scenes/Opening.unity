@@ -1416,8 +1416,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7.3, y: 0.12187}
-  m_SizeDelta: {x: 379.34192, y: 167.16905}
+  m_AnchoredPosition: {x: 25.3, y: -5.1128}
+  m_SizeDelta: {x: 415.31165, y: 177.6385}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1128347061
 MonoBehaviour:
@@ -1451,16 +1451,18 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Forward - RMB
+  m_Text: 'Steer with mouse
+
+    Forward - RMB
 
     Back - MMB
 
-    Rotate with A, D
+    Rotate with A,
+    D
 
     Shoot - LMB
 
-    Switch
-    weapons with 1 or 2
+    Switch weapons with 1 or 2
 
     Boost shields with spacebar
 
@@ -2878,7 +2880,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10.77, y: -118}
+  m_AnchoredPosition: {x: 0.022705, y: -135}
   m_SizeDelta: {x: 100.045395, y: 48.135696}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1719230131
